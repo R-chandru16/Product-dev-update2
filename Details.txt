@@ -1,0 +1,120 @@
+
+
+
+this is visualization project for credit card or bank satement
+
+when customer gives pdf as input it is converted into csv
+
+then from that data we made certain criteria (like NO.of credit or debit,withdrawal and deposit,Highest deposited amount )
+based on that we made 3 bar graph.
+
+
+
+In browser,After upload
+we can see thatinput,output,graph(image) in users/administrator/.spyderpy3/
+
+
+tools:
+flask Api for both login and visualization
+better To use jupiter for visualization and then merge in flask Api
+
+------
+how to see login data in database(mongodb)
+
+Microsoft Windows [Version 10.0.19044.1415]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\MongoDB\Server\5.0\bin>mongo
+MongoDB shell version v5.0.4
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("6eb5e41e-8d46-4e22-ac66-8832e4110885") }
+MongoDB server version: 5.0.4
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-12-27T16:31:47.504+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use Users
+switched to db Users
+> db.users.find()
+{ "_id" : ObjectId("61c41c1fa7ffd00573df9ab0"), "name" : "", "email" : "aaa@gmail.com", "password" : "aaa", "phone" : "9876543212", "address" : "aaa" }
+{ "_id" : ObjectId("61c41c73a7ffd00573df9ab1"), "name" : "", "email" : "abc@gmail.com", "password" : "abc", "phone" : "9876543212", "address" : "abc" }
+{ "_id" : ObjectId("61c46790275d1f41ab81cf76"), "name" : "aaa", "email" : "abca@gmail.com", "password" : "aaa", "phone" : NumberLong("9876543212"), "address" : "abc" }
+{ "_id" : ObjectId("61c467ae275d1f41ab81cf77"), "name" : "aaa", "email" : "aac@gmail.com", "password" : "aaa", "phone" : NumberLong("9876543212"), "address" : "aaa" }
+{ "_id" : ObjectId("61c467e3275d1f41ab81cf78"), "name" : "ccc", "email" : "ccc@gmail.com", "password" : "ccc", "phone" : NumberLong("9876543212"), "address" : "ccc" }
+{ "_id" : ObjectId("61c468e2275d1f41ab81cf79"), "name" : "abc", "email" : "abcd@gmail.com", "password" : "abc", "phone" : NumberLong("9876543212"), "address" : "abc" }
+{ "_id" : ObjectId("61c46982275d1f41ab81cf7a"), "name" : "abc", "email" : "abcc@gmail.com", "password" : "abc", "phone" : NumberLong("9876543212"), "address" : "abc" }
+{ "_id" : ObjectId("61c469c9275d1f41ab81cf7b"), "name" : "aaa", "email" : "aaaa@gmail.com", "password" : "aaa", "phone" : NumberLong("9876543212"), "address" : "aaa" }
+{ "_id" : ObjectId("61c469fc275d1f41ab81cf7c"), "name" : "abc", "email" : "aabc@gmail.com", "password" : "abc", "phone" : NumberLong("9876543212"), "address" : "abc" }
+{ "_id" : ObjectId("61c46ba7275d1f41ab81cf7d"), "name" : "aaa", "email" : "abaa@gmail.com", "password" : "aaa", "phone" : NumberLong("9876543212"), "address" : "aaa" }
+{ "_id" : ObjectId("61c47263275d1f41ab81cf7e"), "name" : "karan", "email" : "karan@gmail.com", "password" : "karan", "phone" : NumberLong("9876543212"), "address" : "karan" }
+{ "_id" : ObjectId("61c490ba275d1f41ab81cf7f"), "name" : "aaa", "email" : "aaa", "password" : "aaa", "phone" : NumberLong("9876543212"), "address" : "aaa" }
+{ "_id" : ObjectId("61c49306275d1f41ab81cf80"), "name" : "bbb", "email" : "bbb", "password" : "bbb", "phone" : NumberLong("9876543212"), "address" : "aaa" }
+{ "_id" : ObjectId("61c493a2275d1f41ab81cf81"), "name" : "ccca", "email" : "ccca@gmail.com", "password" : "ccc", "phone" : NumberLong("9876543212"), "address" : "ccca" }
+{ "_id" : ObjectId("61c49622275d1f41ab81cf82"), "name" : "zzz", "email" : "zzz@gmail.com", "password" : "zzz", "phone" : NumberLong("9876543212"), "address" : "zzz" }
+{ "_id" : ObjectId("61c4979a275d1f41ab81cf83"), "name" : "abc", "email" : "abc@yahoo.com", "password" : "aaa", "phone" : NumberLong("9876543212"), "address" : "abc" }
+{ "_id" : ObjectId("61c497f6275d1f41ab81cf84"), "name" : "bbb", "email" : "bbb@yahoo.com", "password" : "bbb", "phone" : NumberLong("9876543212"), "address" : "bbb" }
+{ "_id" : ObjectId("61c4b892275d1f41ab81cf85"), "name" : "aaa", "email" : "aaabbb@gmail.com", "password" : "aaa", "phone" : "9876543212", "address" : "aaa" }
+{ "_id" : ObjectId("61c547e14bcfb398eecd77be"), "name" : "aaab", "email" : "aaab@gmil.com", "password" : "aaab", "phone" : "9876543212", "address" : "aaab" }
+{ "_id" : ObjectId("61c5595b4bcfb398eecd77bf"), "name" : "222", "email" : "bbb@gmail.com", "password" : "bbb", "phone" : "9999999999", "address" : "333" }
+Type "it" for more
+>
+
+
+
+
+---------------------------
+jupyter
+
+How
+->open anaconda navigator
+->choose jupyter notebook
+->come to windows and select jupyter and it automatically open in browser
+
+select file ->open-> choose-> visualization.ipynb in download
+
+
+
+http://localhost:8888/notebooks/Downloads/Visualization_Bank_Data.ipynb#
+
+----------------------
+
+
+install java jdk and go to bin and copy above directory path and set in environmental variable. then only python package tabula will work
+
+ppt
+
+https://docs.google.com/presentation/d/1Gcdc_iqXLsQbamLTZosxo-qzcGtI4_nz5-se16jpftE/edit#slide=id.p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
